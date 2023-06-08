@@ -8,16 +8,16 @@
 
 #name {
   position: absolute;
-  top: 5%;
-  left: 10%;
-  font-size: 15rem;
+  top: 2vw;
+  left: 10vw;
+  font-size: 12vw;
   max-height: 10rem;
 }
 
 #title {
   position: absolute;
-  top: 50%;
-  left: 40%;
-  font-size: 7rem;
+  bottom: 5vw;
+  right: 10vw;
+  font-size: 6vw;
   max-height: 10rem;
 }
