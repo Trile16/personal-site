@@ -1,15 +1,20 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 import headshot from "./assets/headshot.png";
 
 const NavBar = () => {
   return (
     <div id="nav-bar">
-      <img id="headshot" src={headshot} />
-      <h3>Home</h3>
-      <h3>Home</h3>
-      <h3>Home</h3>
-      <h3>Home</h3>
+      <NavLink to="/" className="link">
+        <img id="headshot" src={headshot} />
+      </NavLink>
+      <NavLink to="/about" className="link">
+        About
+      </NavLink>
+      <NavLink to="/projects" className="link">
+        Projects
+      </NavLink>
     </div>
   );
 };
