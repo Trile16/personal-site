@@ -35,6 +35,12 @@ const Projects = () => {
             Description: Single player games built with HTML, CSS, and
             JavaScript all hosted on a site created with Vite/React
           </p>
+          <p>
+            Overview: This site was created to show proficiency in Vanilla
+            JavaScript. As a fan of online flash games growing up, this was a
+            project that I enjoyed developing. Being able to create these games
+            and play them after is what makes the process so satisfying.
+          </p>
         </div>
       </div>
     </div>
