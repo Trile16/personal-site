@@ -2,6 +2,10 @@
   margin: 0 auto;
   width: 100%;
   display: flex;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #535bf2;
 }
 
 body {

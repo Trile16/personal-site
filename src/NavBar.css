@@ -33,7 +33,8 @@
 @media (max-width: 550px) {
   #nav-bar {
     width: 100%;
-    height: 6rem;
+    height: 4.5rem;
+    min-height: 4.5rem;
     flex-direction: row;
     justify-content: space-around;
     border-bottom: solid 0.2rem black;
