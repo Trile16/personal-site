@@ -27,7 +27,7 @@ const Projects = () => {
                 href="https://github.com/Trile16/game-site"
                 target="_blank"
               >
-                Github
+                GitHub
               </a>
             </div>
           </div>
