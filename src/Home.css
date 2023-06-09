@@ -14,7 +14,6 @@
   position: relative;
   right: 15vw;
   font-size: 12vw;
-  max-height: 10rem;
 }
 
 #title {
@@ -23,5 +22,14 @@
   position: relative;
   left: 5vw;
   font-size: 6vw;
-  max-height: 10rem;
+}
+
+@media (max-width: 550px) {
+  #name {
+    font-size: 5rem;
+  }
+
+  #title {
+    font-size: 2rem;
+  }
 }
