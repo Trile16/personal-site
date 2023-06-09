@@ -58,6 +58,8 @@
   #projects-area {
     max-height: 70%;
     max-width: 80%;
+    position: relative;
+    bottom: 3rem;
   }
 
   #projects-title {

@@ -30,6 +30,8 @@ p {
   #info-container {
     max-height: 70%;
     max-width: 80%;
+    position: relative;
+    bottom: 3rem;
   }
 
   .about-titles {
