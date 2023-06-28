@@ -10,13 +10,13 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  border-right: solid 0.2rem black;
+  border-right: solid 2px black;
 }
 
 #headshot {
   width: 10vw;
   border-radius: 100%;
-  border: solid 0.2rem black;
+  border: solid 2px black;
 }
 
 .link {

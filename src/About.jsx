@@ -6,6 +6,7 @@ const About = () => {
     <div id="about">
       <div id="info-container">
         <h2 className="about-titles">About</h2>
+        <hr />
         <p>
           Software Engineer/Web Developer with a passion to build smooth,
           functional websites.

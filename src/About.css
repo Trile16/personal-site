@@ -8,12 +8,13 @@
 }
 
 #info-container {
-  border: solid 0.2rem black;
+  border: solid 2px black;
   padding: 3vw;
   border-radius: 10px;
   background-color: rgb(52, 43, 138);
   max-width: 65%;
   max-height: 70%;
+  height: 70%;
   overflow-y: auto;
 }
 
