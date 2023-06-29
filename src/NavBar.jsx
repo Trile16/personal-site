@@ -17,7 +17,7 @@ const NavBar = () => {
       <NavLink to="/projects" className="link">
         Projects
       </NavLink>
-      <div className="link">
+      <div>
         <a href="https://github.com/Trile16" target="_blank">
           <img src={githublogo} className="favicon" />
         </a>

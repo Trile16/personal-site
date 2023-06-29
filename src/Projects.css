@@ -36,6 +36,10 @@
   align-items: center;
 }
 
+.project-preview {
+  width: 100%;
+}
+
 .project-name {
   font-size: 1.75vw;
 }

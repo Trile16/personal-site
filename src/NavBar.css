@@ -14,20 +14,36 @@
 }
 
 #headshot {
-  width: 10vw;
+  width: 9vw;
   border-radius: 100%;
   border: solid 2px black;
+  transition: transform 0.2s;
+}
+
+#headshot:hover {
+  transform: scale(1.0001);
 }
 
 .link {
   padding: 1vw;
   font-size: 2.5vw;
+  transition: transform 0.2s;
+}
+
+.link:hover {
+  transform: scale(1.1);
 }
 
 .favicon {
   width: 4vw;
   height: 4vw;
-  padding: 1vw;
+  margin: 1vw;
+  margin-top: 2vw;
+  transition: transform 0.2s;
+}
+
+.favicon:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 550px) {
