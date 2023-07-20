@@ -60,10 +60,6 @@
   margin: 0.25vw;
 }
 
-#color-changer-div {
-  display: none;
-}
-
 #color-mobile-image {
   width: 2.5rem;
 }
@@ -95,18 +91,11 @@
   }
 
   #color-bar {
-    display: none;
     position: absolute;
     top: 5rem;
     background-color: black;
     border-radius: 8px;
     padding: 0.2rem;
     z-index: 1;
-  }
-
-  #color-changer-div {
-    display: flex;
-    align-items: center;
-    position: relative;
   }
 }

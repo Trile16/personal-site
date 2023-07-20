@@ -13,12 +13,12 @@ const NavBar = ({ color, setColor, navColor, setNavColor }) => {
     const navBar = document.getElementById("nav-bar");
     const [body] = document.getElementsByTagName("body");
     const links = document.getElementsByTagName("a");
+    const buttons = document.getElementsByTagName("button");
+    // const metaContnt
+
     body.style.backgroundColor = color;
     navBar.style.backgroundColor = navColor;
-    const buttons = document.getElementsByTagName("button");
 
-    const colorMenu = document.getElementById("color-bar");
-    colorMenu.style.display = "none";
     setMobileColorDropdown(false);
 
     for (let button of buttons) {
@@ -61,22 +61,6 @@ const NavBar = ({ color, setColor, navColor, setNavColor }) => {
       <NavLink to="/projects" className="link">
         Projects
       </NavLink>
-      <div
-        id="color-changer-div"
-        onClick={(e) => {
-          e.preventDefault();
-          const colorMenu = document.getElementById("color-bar");
-          if (!mobileColorDropdown) {
-            colorMenu.style.display = "flex";
-            setMobileColorDropdown(true);
-          } else {
-            colorMenu.style.display = "none";
-            setMobileColorDropdown(false);
-          }
-        }}
-      >
-        <img id="color-mobile-image" src={colorchanger} alt="Color Changer" />
-      </div>
       <div id="color-bar">
         <button
           id="blue"
