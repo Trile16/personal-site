@@ -1,11 +1,16 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 import headshot from "./assets/headshot.png";
 import githublogo from "./assets/github-mark-white.png";
 import linkedinlogo from "./assets/linkedin-mark-white.png";
+import colorchanger from "./assets/color-changer.png";
 
 const NavBar = ({ color, setColor, navColor, setNavColor }) => {
+  const [mobileColorDropdown, setMobileColorDropdown] = useState(false);
+
+  const colorMenu = document.getElementById("color-bar");
+
   useEffect(() => {
     const navBar = document.getElementById("nav-bar");
     const [body] = document.getElementsByTagName("body");
@@ -13,11 +18,15 @@ const NavBar = ({ color, setColor, navColor, setNavColor }) => {
     body.style.backgroundColor = color;
     navBar.style.backgroundColor = navColor;
     const buttons = document.getElementsByTagName("button");
+
+    colorMenu.style.display = "none";
+    setMobileColorDropdown(false);
+
     for (let button of buttons) {
       button.classList.remove("hover-class");
     }
 
-    if (navColor === "rgb(52, 43, 138)") {
+    if (navColor === "#342B8A") {
       const blue = document.getElementById("blue");
       blue.classList.add("hover-class");
     }
@@ -53,13 +62,28 @@ const NavBar = ({ color, setColor, navColor, setNavColor }) => {
       <NavLink to="/projects" className="link">
         Projects
       </NavLink>
+      <div
+        id="color-changer-div"
+        onClick={(e) => {
+          e.preventDefault();
+          if (!mobileColorDropdown) {
+            colorMenu.style.display = "flex";
+            setMobileColorDropdown(true);
+          } else {
+            colorMenu.style.display = "none";
+            setMobileColorDropdown(false);
+          }
+        }}
+      >
+        <img id="color-mobile-image" src={colorchanger} alt="Color Changer" />
+      </div>
       <div id="color-bar">
         <button
           id="blue"
           className="color"
           onClick={(e) => {
             e.preventDefault();
-            setNavColor("rgb(52, 43, 138)");
+            setNavColor("#342B8A");
             setColor("#535bf2");
           }}
         ></button>

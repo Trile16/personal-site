@@ -8,7 +8,7 @@ import "./App.css";
 
 function App() {
   const [color, setColor] = useState("");
-  const [navColor, setNavColor] = useState("rgb(52, 43, 138)");
+  const [navColor, setNavColor] = useState("#342B8A");
 
   return (
     <>
