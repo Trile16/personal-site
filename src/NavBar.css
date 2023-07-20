@@ -25,9 +25,9 @@
 }
 
 .link {
-  padding: 1vw;
   font-size: 2.5vw;
   transition: transform 0.2s;
+  margin: 0.5vw;
 }
 
 .link:hover {
@@ -44,6 +44,19 @@
 
 .favicon:hover {
   transform: scale(1.1);
+}
+
+.hover-class {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#color-bar {
+  margin: 1vw;
+}
+.color {
+  width: 2vw;
+  height: 2vw;
+  margin: 0.25vw;
 }
 
 @media (max-width: 550px) {

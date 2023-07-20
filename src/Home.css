@@ -24,6 +24,22 @@
   font-size: 6vw;
 }
 
+#blue {
+  background-color: rgb(52, 43, 138);
+}
+
+#purple {
+  background-color: #875f9a;
+}
+
+#green {
+  background-color: #006442;
+}
+
+#red {
+  background-color: #8f1d21;
+}
+
 @media (max-width: 550px) {
   #name {
     font-size: 5rem;
