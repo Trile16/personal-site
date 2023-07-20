@@ -9,8 +9,6 @@ import colorchanger from "./assets/color-changer.png";
 const NavBar = ({ color, setColor, navColor, setNavColor }) => {
   const [mobileColorDropdown, setMobileColorDropdown] = useState(false);
 
-  const colorMenu = document.getElementById("color-bar");
-
   useEffect(() => {
     const navBar = document.getElementById("nav-bar");
     const [body] = document.getElementsByTagName("body");
@@ -19,6 +17,7 @@ const NavBar = ({ color, setColor, navColor, setNavColor }) => {
     navBar.style.backgroundColor = navColor;
     const buttons = document.getElementsByTagName("button");
 
+    const colorMenu = document.getElementById("color-bar");
     colorMenu.style.display = "none";
     setMobileColorDropdown(false);
 
@@ -66,6 +65,7 @@ const NavBar = ({ color, setColor, navColor, setNavColor }) => {
         id="color-changer-div"
         onClick={(e) => {
           e.preventDefault();
+          const colorMenu = document.getElementById("color-bar");
           if (!mobileColorDropdown) {
             colorMenu.style.display = "flex";
             setMobileColorDropdown(true);
