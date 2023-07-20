@@ -14,8 +14,9 @@ const NavBar = ({ color, setColor, navColor, setNavColor }) => {
     const [body] = document.getElementsByTagName("body");
     const links = document.getElementsByTagName("a");
     const buttons = document.getElementsByTagName("button");
-    // const metaContnt
+    const metaMoblieColor = document.getElementById("meta-color");
 
+    metaMoblieColor.content = navColor;
     body.style.backgroundColor = color;
     navBar.style.backgroundColor = navColor;
 
