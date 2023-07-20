@@ -57,6 +57,11 @@
   border: solid 0.2px white;
   border-radius: 10px;
   padding: 1vw;
+  transition: border-color 0.25s;
+}
+
+.project-links:hover {
+  border-color: black;
 }
 
 @media (max-width: 550px) {
