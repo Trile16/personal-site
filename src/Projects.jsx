@@ -1,11 +1,21 @@
-import React from "react";
+import { useEffect } from "react";
 import "./Projects.css";
 import onepgameslogo from "./assets/1p-games-logo.png";
 import onepgamespreview from "./assets/1p-games-preview.png";
 import plantplazalogo from "./assets/plant-plaza-logo.png";
 import plantplazapreview from "./assets/plant-plaza-preview.png";
 
-const Projects = () => {
+const Projects = ({ color, navColor }) => {
+  useEffect(() => {
+    const projectsContainer = document.getElementById("projects-area");
+    const links = document.getElementsByTagName("a");
+
+    projectsContainer.style.backgroundColor = navColor;
+    for (let link of links) {
+      link.style.color = color;
+    }
+  }, [navColor]);
+
   return (
     <div id="projects">
       <div id="projects-area">

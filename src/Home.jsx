@@ -1,7 +1,6 @@
-import React from "react";
 import "./Home.css";
 
-const Header = () => {
+const Home = () => {
   return (
     <div id="home">
       <h1 id="name">Tri Le</h1>
@@ -10,4 +9,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Home;

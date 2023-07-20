@@ -1,7 +1,12 @@
-import React from "react";
+import { useEffect } from "react";
 import "./About.css";
 
-const About = () => {
+const About = ({ navColor }) => {
+  useEffect(() => {
+    const infoContainer = document.getElementById("info-container");
+    infoContainer.style.backgroundColor = navColor;
+  }, [navColor]);
+
   return (
     <div id="about">
       <div id="info-container">
