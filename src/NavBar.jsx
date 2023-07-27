@@ -69,7 +69,7 @@ const NavBar = ({ color, setColor, navColor, setNavColor }) => {
           onClick={(e) => {
             e.preventDefault();
             setNavColor("#342B8A");
-            setColor("#535bf2");
+            setColor("#535BF2");
           }}
         ></button>
         <button
