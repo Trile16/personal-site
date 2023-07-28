@@ -4,6 +4,8 @@ import onepgameslogo from "./assets/1p-games-logo.png";
 import onepgamespreview from "./assets/1p-games-preview.png";
 import plantplazalogo from "./assets/plant-plaza-logo.png";
 import plantplazapreview from "./assets/plant-plaza-preview.png";
+import everydaywidgetslogo from "./assets/everyday-widgets-logo.png";
+import everydaywidgetspreview from "./assets/everyday-widgets-preview.png";
 
 const Projects = ({ color, navColor }) => {
   useEffect(() => {
@@ -63,17 +65,63 @@ const Projects = ({ color, navColor }) => {
             />
           </a>
           <p>
-            Description: Plant Wishlist Website created with React and Vite that
-            uses a self built API made with with Node.js, PostgreSQL, Express,
-            and static HTML and CSS. (see API Docs).
+            Description: Plant Wishlist Web Application with API Documenation
           </p>
           <p>
-            Overview: This site was created to show proficiency in fullstack
-            development. I love plants, and I collect them as a hobby, so I
-            decided to build out this site as a passion project. After building
-            out my server and database, I was able create a fully functional
-            frontend wishlist site that is able to allow users to register,
-            login, and add a collection of house plants to their wishlist.
+            Tech Stack: HTML, CSS, JavaScript, PostgreSQL, Express, Node, React,
+            Vite
+          </p>
+          <p>
+            Overview: This site was built to show proficiency in fullstack
+            development. I love plants and collect them as a hobby, so I created
+            this site as a passion project. I used Node, Express, and PostgreSQL
+            to build my server and database, and I used React for frontend
+            development. This web application allows users to register, login,
+            and add or remove plants to their wishlist. API documentation is
+            provded for those who would like to build their own application.
+          </p>
+        </div>
+        <hr />
+        <div className="card">
+          <div className="project-header">
+            <div className="project-title">
+              <img
+                className="project-image"
+                src={everydaywidgetslogo}
+                alt="Plant Plaza Logo"
+              />
+              <h3 className="project-name">Everyday Widgets</h3>
+            </div>
+            <div>
+              <a
+                className="project-links"
+                href="https://everyday-widgets.vercel.app/"
+                target="_blank"
+              >
+                Deploy
+              </a>
+              <a
+                className="project-links"
+                href="https://github.com/Trile16/everyday-widgets"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+          <a href="https://everyday-widgets.vercel.app/" target="_blank">
+            <img
+              className="project-preview"
+              src={everydaywidgetspreview}
+              alt="Plant Plaza Preview"
+            />
+          </a>
+          <p>Description: Widget Web Application</p>
+          <p>Tech Stack: HTML, CSS, JavaScript, Next.js, Tailwind</p>
+          <p>
+            Overview: We use many simple widgets everyday, so I decided to build
+            my own replications of applications on a single landing page. This
+            site was fun to develop, as it required more effort than expected.
           </p>
         </div>
         <hr />
@@ -111,15 +159,13 @@ const Projects = ({ color, navColor }) => {
               alt="1P Games Preview"
             />
           </a>
+          <p>Description: Single Player JavaScript Games</p>
+          <p>Tech Stack: HTML, CSS, JavaScript, React, Vite</p>
           <p>
-            Description: Single player games built with HTML, CSS, and
-            JavaScript all hosted on a site created with Vite/React
-          </p>
-          <p>
-            Overview: This site was created to show proficiency in Vanilla
-            JavaScript. As a fan of online flash games growing up, this was a
-            project that I enjoyed developing. Being able to create these games
-            and play them after is what makes the process so satisfying.
+            Overview: As a fan of online flash games growing up, this was a
+            project that I enjoyed developing. Being able to build these games
+            and play them once completed is what makes this process so
+            satisfying.
           </p>
         </div>
       </div>

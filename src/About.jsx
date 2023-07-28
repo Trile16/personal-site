@@ -23,10 +23,9 @@ const About = ({ navColor }) => {
         <hr />
         <h2 className="about-titles">Tech Stack</h2>
         <p>
-          Developing With: JavaScript | React & Redux | Node.js | Express |
-          PostgreSQL | Vite
+          Developing With: JavaScript | React | Redux | Next.js | Node.js |
+          Express | PostgreSQL | Vite | Tailwind CSS
         </p>
-        <p>Learning: Next.js</p>
         <p>Focus: Problem Solving | Communication | Teamwork </p>
       </div>
     </div>
