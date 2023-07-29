@@ -9,6 +9,7 @@ import "./App.css";
 function App() {
   const [color, setColor] = useState("");
   const [navColor, setNavColor] = useState("#342B8A");
+  const [tabIndex, setTabIndex] = useState(0);
 
   return (
     <>
@@ -34,7 +35,14 @@ function App() {
         <Route path="/about" element={<About navColor={navColor} />} />
         <Route
           path="/projects"
-          element={<Projects color={color} navColor={navColor} />}
+          element={
+            <Projects
+              color={color}
+              navColor={navColor}
+              tabIndex={tabIndex}
+              setTabIndex={setTabIndex}
+            />
+          }
         />
       </Routes>
       <div className="area">
