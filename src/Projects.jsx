@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "./Projects.css";
 import onepgameslogo from "./assets/1p-games-logo.png";
@@ -9,6 +9,8 @@ import everydaywidgetslogo from "./assets/everyday-widgets-logo.png";
 import everydaywidgetspreview from "./assets/everyday-widgets-preview.png";
 
 const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
+  const [tabName, setTabName] = useState("Plant Plaza");
+
   useEffect(() => {
     const projectsContainer = document.getElementById("projects-area");
     const links = document.getElementsByTagName("a");
@@ -19,8 +21,48 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
     }
   }, [navColor, tabIndex]);
 
+  useEffect(() => {
+    const tabList = document.getElementsByClassName("project-tabs");
+
+    for (let tab of tabList) {
+      tab.classList.remove("project-tabs-hover-class");
+    }
+
+    if (tabIndex === 0) {
+      const tab = document.getElementById("tab:r1:0");
+      tab.classList.add("project-tabs-hover-class");
+    }
+
+    if (tabIndex === 1) {
+      const tab = document.getElementById("tab:r1:1");
+      tab.classList.add("project-tabs-hover-class");
+    }
+
+    if (tabIndex === 2) {
+      const tab = document.getElementById("tab:r1:2");
+      tab.classList.add("project-tabs-hover-class");
+    }
+  }, [tabIndex]);
+
   return (
     <div id="projects">
+      <div className="area">
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <div id="projects-area">
         <h2 id="projects-title">Projects</h2>
         <div className="App">
@@ -42,7 +84,6 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
                 <h3>1P Games</h3>
               </Tab>
             </TabList>
-            <hr />
             <TabPanel>
               <div className="card">
                 <div className="project-header">
@@ -78,7 +119,11 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
                     </a>
                   </div>
                 </div>
-                <a href="https://plantplaza.netlify.app" target="_blank">
+                <a
+                  className="project-prev-link"
+                  href="https://plantplaza.netlify.app"
+                  target="_blank"
+                >
                   <img
                     className="project-preview"
                     src={plantplazapreview}
@@ -86,7 +131,7 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
                   />
                 </a>
                 <p>
-                  Description: Plant Wishlist Web Application with API
+                  Description: Plant Wishlist Database Driven Web Application with API
                   Documenation
                 </p>
                 <p>
@@ -133,11 +178,15 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
                     </a>
                   </div>
                 </div>
-                <a href="https://everyday-widgets.vercel.app/" target="_blank">
+                <a
+                  className="project-prev-link"
+                  href="https://everyday-widgets.vercel.app/"
+                  target="_blank"
+                >
                   <img
                     className="project-preview"
                     src={everydaywidgetspreview}
-                    alt="Plant Plaza Preview"
+                    alt="Everyday Widgets Preview"
                   />
                 </a>
                 <p>Description: Widget Web Application</p>
@@ -178,7 +227,11 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
                     </a>
                   </div>
                 </div>
-                <a href="https://1p-games.netlify.app" target="_blank">
+                <a
+                  className="project-prev-link"
+                  href="https://1p-games.netlify.app"
+                  target="_blank"
+                >
                   <img
                     className="project-preview"
                     src={onepgamespreview}
