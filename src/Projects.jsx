@@ -9,8 +9,6 @@ import everydaywidgetslogo from "./assets/everyday-widgets-logo.png";
 import everydaywidgetspreview from "./assets/everyday-widgets-preview.png";
 
 const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
-  const [tabName, setTabName] = useState("Plant Plaza");
-
   useEffect(() => {
     const projectsContainer = document.getElementById("projects-area");
     const links = document.getElementsByTagName("a");
@@ -30,17 +28,23 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
 
     if (tabIndex === 0) {
       const tab = document.getElementById("tab:r1:0");
-      tab.classList.add("project-tabs-hover-class");
+      if (tab && tab.classList) {
+        tab.classList.add("project-tabs-hover-class");
+      }
     }
 
     if (tabIndex === 1) {
       const tab = document.getElementById("tab:r1:1");
-      tab.classList.add("project-tabs-hover-class");
+      if (tab && tab.classList) {
+        tab.classList.add("project-tabs-hover-class");
+      }
     }
 
     if (tabIndex === 2) {
       const tab = document.getElementById("tab:r1:2");
-      tab.classList.add("project-tabs-hover-class");
+      if (tab && tab.classList) {
+        tab.classList.add("project-tabs-hover-class");
+      }
     }
   }, [tabIndex]);
 
@@ -131,8 +135,8 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
                   />
                 </a>
                 <p>
-                  Description: Plant Wishlist Database Driven Web Application with API
-                  Documenation
+                  Description: Plant Wishlist Database Driven Web Application
+                  with API Documenation
                 </p>
                 <p>
                   Tech Stack: HTML, CSS, JavaScript, PostgreSQL, Express, Node,
