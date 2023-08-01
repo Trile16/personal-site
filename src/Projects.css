@@ -84,6 +84,7 @@
   justify-content: center;
   list-style: none;
   margin-bottom: 0;
+  padding: 0;
 }
 
 .project-tabs {
@@ -188,5 +189,8 @@ hr {
 
   .project-tabs h3 {
     font-size: 0.75rem;
+  }
+
+  #tab-list {
   }
 }
