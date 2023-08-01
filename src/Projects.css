@@ -91,6 +91,7 @@
   display: flex;
   align-items: center;
   border: solid 2px black;
+  outline: black;
   background-color: black;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -103,9 +104,13 @@
 .project-tabs:hover {
   display: flex;
   align-items: center;
-  border-color: white;
   cursor: pointer;
+  border-color: white;
 }
+
+/* .project-tabs:focus,
+.project-tabs:focus-visible {
+} */
 
 .project-tabs-hover-class {
   border-color: white;

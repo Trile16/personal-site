@@ -17,7 +17,7 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
     for (let link of links) {
       link.style.color = color;
     }
-  }, [navColor, tabIndex]);
+  }, [navColor]);
 
   useEffect(() => {
     const tabList = document.getElementsByClassName("project-tabs");
@@ -27,21 +27,22 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
     }
 
     if (tabIndex === 0) {
-      const tab = document.getElementById("tab:r1:0");
+      console.log(tabIndex);
+      const tab = document.getElementById("tab:r0:0");
       if (tab && tab.classList) {
         tab.classList.add("project-tabs-hover-class");
       }
     }
 
     if (tabIndex === 1) {
-      const tab = document.getElementById("tab:r1:1");
+      const tab = document.getElementById("tab:r0:1");
       if (tab && tab.classList) {
         tab.classList.add("project-tabs-hover-class");
       }
     }
 
     if (tabIndex === 2) {
-      const tab = document.getElementById("tab:r1:2");
+      const tab = document.getElementById("tab:r0:2");
       if (tab && tab.classList) {
         tab.classList.add("project-tabs-hover-class");
       }
@@ -72,7 +73,10 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
         <div className="App">
           <Tabs
             selectedIndex={tabIndex}
-            onSelect={(index) => setTabIndex(index)}
+            onSelect={(index) => {
+              console.log(index);
+              setTabIndex(index);
+            }}
           >
             <TabList id="tab-list">
               <Tab className="project-tabs">
