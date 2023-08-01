@@ -5,6 +5,9 @@ const About = ({ navColor }) => {
   useEffect(() => {
     const infoContainer = document.getElementById("info-container");
     infoContainer.style.backgroundColor = navColor;
+
+    const about = document.getElementById("about");
+    about.style.backgroundColor = navColor;
   }, [navColor]);
 
   return (
@@ -13,20 +16,21 @@ const About = ({ navColor }) => {
         <h2 className="about-titles">About</h2>
         <hr />
         <p>
-          Software Engineer/Fullstack Developer with a passion to build smooth,
-          functional websites.
+          Hey, my name is Tri, and I'm a Software Engineer/Fullstack Developer
+          with a passion to build smooth, functional applications.
         </p>
         <p>
-          One and a half years of experience in utilizing various technologies
-          for web development instruction.
-        </p>
-        <hr />
-        <h2 className="about-titles">Tech Stack</h2>
-        <p>
-          Developing With: JavaScript | React | Redux | Next.js | Node.js |
-          Express | PostgreSQL | Vite | Tailwind CSS
+          I help people become web developers, and I enjoy developing to help organizations build and scale.
         </p>
         <p>Focus: Problem Solving | Communication | Teamwork </p>
+        <hr />
+        <h2 className="about-titles">Tech Stack</h2>
+        <hr />
+        <p>
+          Developing With: JavaScript | TypeScript | React | Redux | Next.js | Node.js |
+          Express | PostgreSQL | Vite | Tailwind CSS
+        </p>
+        <hr />
       </div>
     </div>
   );

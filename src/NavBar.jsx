@@ -1,13 +1,27 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 import headshot from "./assets/headshot.png";
 import githublogo from "./assets/github-mark-white.png";
 import linkedinlogo from "./assets/linkedin-mark-white.png";
-import colorchanger from "./assets/color-changer.png";
+import hamburger from "./assets/hamburger.png";
 
 const NavBar = ({ color, setColor, navColor, setNavColor }) => {
-  const [mobileColorDropdown, setMobileColorDropdown] = useState(false);
+  const [mobileDropdown, setMobileDropdown] = useState(false);
+
+  const handleMobileMenu = (e) => {
+    e.preventDefault();
+
+    const navBar = document.getElementById("nav-bar");
+    console.log(navBar.style.display);
+
+    if (!navBar.style.display) {
+      setMobileDropdown(true);
+      navBar.style.display = "flex";
+    } else {
+      setMobileDropdown(false);
+      navBar.style.display = "";
+    }
+  };
 
   useEffect(() => {
     const navBar = document.getElementById("nav-bar");
@@ -19,8 +33,6 @@ const NavBar = ({ color, setColor, navColor, setNavColor }) => {
     metaMoblieColor.content = navColor;
     body.style.backgroundColor = color;
     navBar.style.backgroundColor = navColor;
-
-    setMobileColorDropdown(false);
 
     for (let button of buttons) {
       button.classList.remove("hover-class");
@@ -52,63 +64,122 @@ const NavBar = ({ color, setColor, navColor, setNavColor }) => {
   }, [color]);
 
   return (
-    <div id="nav-bar">
-      <NavLink to="/" className="link">
-        <img id="headshot" src={headshot} />
-      </NavLink>
-      <NavLink to="/about" className="link">
-        About
-      </NavLink>
-      <NavLink to="/projects" className="link">
-        Projects
-      </NavLink>
-      <div id="color-bar">
-        <button
-          id="blue"
-          className="color"
-          onClick={(e) => {
-            e.preventDefault();
-            setNavColor("#342B8A");
-            setColor("#535BF2");
-          }}
-        ></button>
-        <button
-          id="purple"
-          className="color"
-          onClick={(e) => {
-            e.preventDefault();
-            setNavColor("#875F9A");
-            setColor("#BE90D4");
-          }}
-        ></button>
-        <button
-          id="green"
-          className="color"
-          onClick={(e) => {
-            e.preventDefault();
-            setNavColor("#006442");
-            setColor("#16A085");
-          }}
-        ></button>
-        <button
-          id="red"
-          className="color"
-          onClick={(e) => {
-            e.preventDefault();
-            setNavColor("#8F1D21");
-            setColor("#D24D57");
-          }}
-        ></button>
+    <>
+      <img
+        id="hamburger"
+        src={hamburger}
+        alt="hamburger icon"
+        onClick={handleMobileMenu}
+      />
+      <div id="nav-bar">
+        <div id="nav-bar-content">
+          <div id="nav-me">
+            <img id="nav-headshot" src={headshot} />
+            <h2 id="nav-name">Tri Le</h2>
+          </div>
+          <div id="color-bar">
+            <button
+              id="blue"
+              className="color"
+              onClick={() => {
+                setNavColor("#342B8A");
+                setColor("#535BF2");
+                const navBar = document.getElementById("nav-bar");
+                navBar.style.display = "";
+              }}
+            ></button>
+            <button
+              id="purple"
+              className="color"
+              onClick={() => {
+                setNavColor("#875F9A");
+                setColor("#BE90D4");
+                const navBar = document.getElementById("nav-bar");
+                navBar.style.display = "";
+              }}
+            ></button>
+            <button
+              id="green"
+              className="color"
+              onClick={() => {
+                setNavColor("#006442");
+                setColor("#16A085");
+                const navBar = document.getElementById("nav-bar");
+                navBar.style.display = "";
+              }}
+            ></button>
+            <button
+              id="red"
+              className="color"
+              onClick={() => {
+                setNavColor("#8F1D21");
+                setColor("#D24D57");
+                const navBar = document.getElementById("nav-bar");
+                navBar.style.display = "";
+              }}
+            ></button>
+          </div>
+          <div id="links">
+            <a
+              className="link"
+              href="#home"
+              onClick={() => {
+                const navBar = document.getElementById("nav-bar");
+                navBar.style.display = "";
+              }}
+            >
+              Home
+            </a>
+            <a
+              className="link"
+              href="#about"
+              onClick={() => {
+                const navBar = document.getElementById("nav-bar");
+                navBar.style.display = "";
+              }}
+            >
+              About
+            </a>
+            <a
+              className="link"
+              href="#projects"
+              onClick={() => {
+                const navBar = document.getElementById("nav-bar");
+                navBar.style.display = "";
+              }}
+            >
+              Projects
+            </a>
+            <a
+              className="link"
+              href="#contact"
+              onClick={() => {
+                const navBar = document.getElementById("nav-bar");
+                navBar.style.display = "";
+              }}
+            >
+              Contact
+            </a>
+          </div>
+          <div id="socials">
+            <a
+              className="socials-link"
+              href="https://github.com/Trile16"
+              target="_blank"
+            >
+              <img src={githublogo} className="favicon" />
+            </a>
+            <a
+              className="socials-link"
+              href="https://www.linkedin.com/in/trile16/"
+              target="_blank"
+            >
+              <img src={linkedinlogo} className="favicon" />
+            </a>
+          </div>
+        </div>
       </div>
-      <div>
-        <a href="https://github.com/Trile16" target="_blank">
-          <img src={githublogo} className="favicon" />
-        </a>
-        <a href="https://www.linkedin.com/in/trile16/" target="_blank">
-          <img src={linkedinlogo} className="favicon" />
-        </a>
-      </div>
-    </div>
+    </>
   );
 };
 

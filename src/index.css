@@ -25,11 +25,15 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+p {
+  font-size: 1rem;
 }
 
 button {
@@ -50,6 +54,6 @@ button:focus-visible {
 
 @media (max-width: 550px) {
   p {
-    font-size: 1.2rem;
+    font-size: 0.75rem;
   }
 }
