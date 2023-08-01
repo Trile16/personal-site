@@ -56,4 +56,12 @@ button:focus-visible {
   p {
     font-size: 0.75rem;
   }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
 }
