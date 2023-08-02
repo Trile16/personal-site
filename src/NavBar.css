@@ -1,7 +1,7 @@
 #nav-bar {
   width: 100vw;
   height: 4rem;
-  background-color: #342b8a;
+  background-color: #6699ff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -39,6 +39,10 @@
   transition: transform 0.2s;
 }
 
+#nav-headshot:hover {
+  transform: scale(1.2);
+}
+
 #nav-name {
   font-size: 1rem;
   padding-left: 1rem;
@@ -46,6 +50,10 @@
 
 #headshot:hover {
   transform: scale(1.0001);
+}
+
+#links {
+  display: flex;
 }
 
 .link {
@@ -104,7 +112,7 @@
 @media (max-width: 550px) {
   #nav-bar {
     display: none;
-    height: 75%;
+    height: 75vh;
     width: 5rem;
     position: fixed;
     top: 4rem;
@@ -134,7 +142,6 @@
   }
 
   #links {
-    display: flex;
     flex-direction: column;
   }
 
