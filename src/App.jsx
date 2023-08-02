@@ -8,7 +8,7 @@ import "./App.css";
 
 function App() {
   const [color, setColor] = useState("");
-  const [navColor, setNavColor] = useState("#342B8A");
+  const [navColor, setNavColor] = useState("#0066CC");
   const [tabIndex, setTabIndex] = useState(0);
 
   useEffect(() => {

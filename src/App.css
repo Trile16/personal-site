@@ -7,10 +7,15 @@
 }
 
 body {
-  font-family: "Geologica", sans-serif;
-  background-color: #535bf2;
+  font-family: "Roboto Flex", sans-serif;
+  background-color: #6699ff;
   z-index: 0;
   color: white;
+}
+
+h1,
+h2 {
+  font-family: "Comfortaa", cursive;
 }
 
 /* width */

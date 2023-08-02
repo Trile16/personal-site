@@ -26,6 +26,9 @@ p {
 }
 
 @media (max-width: 550px) {
+  #about {
+    min-height: 50vh;
+  }
   #info-container {
     padding: 1rem;
     max-width: 100%;

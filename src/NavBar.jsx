@@ -38,7 +38,7 @@ const NavBar = ({ color, setColor, navColor, setNavColor }) => {
       button.classList.remove("hover-class");
     }
 
-    if (navColor === "#342B8A") {
+    if (navColor === "#0066CC") {
       const blue = document.getElementById("blue");
       blue.classList.add("hover-class");
     }
@@ -82,8 +82,8 @@ const NavBar = ({ color, setColor, navColor, setNavColor }) => {
               id="blue"
               className="color"
               onClick={() => {
-                setNavColor("#342B8A");
-                setColor("#535BF2");
+                setNavColor("#0066CC");
+                setColor("#6699FF");
                 const navBar = document.getElementById("nav-bar");
                 navBar.style.display = "";
               }}
