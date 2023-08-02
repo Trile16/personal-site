@@ -22,6 +22,11 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
   useEffect(() => {
     const tabList = document.getElementsByClassName("project-tabs");
 
+    const links = document.getElementsByTagName("a");
+    for (let link of links) {
+      link.style.color = color;
+    }
+
     for (let tab of tabList) {
       tab.classList.remove("project-tabs-hover-class");
     }
