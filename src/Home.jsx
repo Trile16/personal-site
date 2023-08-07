@@ -4,7 +4,14 @@ const Home = () => {
   return (
     <div id="home">
       <h1 id="name">Tri Le</h1>
-      <h2 id="title">Software Engineer</h2>
+      <h2 id="title">
+        <div>WhiteSpace</div>
+        <span>Full Stack Developer</span>
+        <span>Animal/Plant Lover</span>
+        <span>Team Player</span>
+        <span>Problem Solver</span>
+        <span>Software Engineer</span>
+      </h2>
       <div className="area">
         <ul className="circles">
           <li></li>
