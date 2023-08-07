@@ -29,7 +29,7 @@ const About = ({ navColor }) => {
         <h2 className="about-titles">About</h2>
         <hr />
         <p>
-          Hey, my name is Tri, and I'm a Software Engineer/Fullstack Developer
+          Hey, my name is Tri, and I'm a Software Engineer/Full Stack Developer
           with a passion to build smooth, functional applications.
         </p>
         <p>
