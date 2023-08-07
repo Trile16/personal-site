@@ -128,22 +128,22 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
                   />
                 </a>
                 <p>
-                  Description: Plant Wishlist Database Driven Web Application
-                  with API Documenation
+                  <u>Description</u>: Plant Wishlist Database Driven Web
+                  Application with API Documenation
                 </p>
                 <p>
-                  Tech Stack: HTML, CSS, JavaScript, PostgreSQL, Express, Node,
-                  React, Vite
+                  <u>Tech Stack</u>: HTML, CSS, JavaScript, PostgreSQL, Express,
+                  Node, React, Vite
                 </p>
                 <p>
-                  Overview: This site was built to show proficiency in fullstack
-                  development. I love plants and collect them as a hobby, so I
-                  created this site as a passion project. I used Node, Express,
-                  and PostgreSQL to build my server and database, and I used
-                  React for frontend development. This web application allows
-                  users to register, login, and add or remove plants to their
-                  wishlist. API documentation is provded for those who would
-                  like to build their own application.
+                  <u>Overview</u>: This site was built to show proficiency in
+                  fullstack development. I love plants and collect them as a
+                  hobby, so I created this site as a passion project. I used
+                  Node, Express, and PostgreSQL to build my server and database,
+                  and I used React for frontend development. This web
+                  application allows users to register, login, and add or remove
+                  plants to their wishlist. API documentation is provded for
+                  those who would like to build their own application.
                 </p>
               </div>
             </TabPanel>
@@ -186,13 +186,17 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
                     alt="Everyday Widgets Preview"
                   />
                 </a>
-                <p>Description: Widget Web Application</p>
-                <p>Tech Stack: HTML, CSS, JavaScript, Next.js, Tailwind</p>
                 <p>
-                  Overview: We use many simple widgets everyday, so I decided to
-                  build my own replications of applications on a single landing
-                  page. This site was fun to develop, as it required more effort
-                  than expected.
+                  <u>Description</u>: Widget Web Application
+                </p>
+                <p>
+                  <u>Tech Stack</u>: HTML, CSS, JavaScript, Next.js, Tailwind
+                </p>
+                <p>
+                  <u>Overview</u>: This site was created to develop replications
+                  of applications that we use on a daily basis. This project was
+                  fun to develop and gave me an appreciation for those who
+                  developed these technologies.
                 </p>
               </div>
             </TabPanel>
@@ -235,13 +239,17 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
                     alt="1P Games Preview"
                   />
                 </a>
-                <p>Description: Single Player JavaScript Games</p>
-                <p>Tech Stack: HTML, CSS, JavaScript, React, Vite</p>
                 <p>
-                  Overview: As a fan of online flash games growing up, this was
-                  a project that I enjoyed developing. Being able to build these
-                  games and play them once completed is what makes this process
-                  so satisfying.
+                  <u>Description</u>: Single Player JavaScript Games
+                </p>
+                <p>
+                  <u>Tech Stack</u>: HTML, CSS, JavaScript, React, Vite
+                </p>
+                <p>
+                  <u>Overview</u>: As a fan of online flash games growing up,
+                  this was a project that I enjoyed developing. Being able to
+                  build these games and play them once completed is what makes
+                  this process so satisfying.
                 </p>
               </div>
             </TabPanel>
