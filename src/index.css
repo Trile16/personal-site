@@ -53,10 +53,6 @@ button:focus-visible {
 }
 
 @media (max-width: 550px) {
-  p {
-    font-size: 0.75rem;
-  }
-
   html,
   body {
     overflow-x: hidden;
