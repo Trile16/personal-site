@@ -1,0 +1,18 @@
+.tech-card {
+  width: 5rem;
+  padding: 1rem;
+  transition: transform 0.2s;
+}
+
+.tech-img {
+  width: 100%;
+}
+
+.tech-name {
+  width: 100%;
+  text-align: center;
+}
+
+.tech-card:hover {
+  transform: scale(1.2);
+}

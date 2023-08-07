@@ -24,6 +24,7 @@ span {
 
 #title {
   position: relative;
+  margin-top: 6vw;
   margin-bottom: 6vw;
   font-size: 5vw;
   display: flex;
@@ -35,7 +36,7 @@ span {
   top: 0;
   width: 55vw;
   opacity: 0;
-  animation: animate2 15s linear infinite;
+  animation: animate2 10s linear infinite;
   text-align: center;
 }
 
@@ -237,19 +238,19 @@ span {
 }
 
 #title span:nth-child(2) {
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 #title span:nth-child(3) {
-  animation-delay: 6s;
+  animation-delay: 4s;
 }
 
 #title span:nth-child(4) {
-  animation-delay: 9s;
+  animation-delay: 6s;
 }
 
 #title span:nth-child(5) {
-  animation-delay: 12s;
+  animation-delay: 8s;
 }
 
 @media (max-width: 550px) {
