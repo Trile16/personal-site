@@ -31,27 +31,11 @@ const Projects = ({ color, navColor, tabIndex, setTabIndex }) => {
       tab.classList.remove("project-tabs-hover-class");
     }
 
-    if (tabIndex === 0) {
-      console.log(tabIndex);
-      const tab = document.getElementById("tab:r0:0");
-      if (tab && tab.classList) {
-        tab.classList.add("project-tabs-hover-class");
-      }
-    }
+    const selectedTab = document.getElementsByClassName(
+      "react-tabs__tab--selected"
+    );
 
-    if (tabIndex === 1) {
-      const tab = document.getElementById("tab:r0:1");
-      if (tab && tab.classList) {
-        tab.classList.add("project-tabs-hover-class");
-      }
-    }
-
-    if (tabIndex === 2) {
-      const tab = document.getElementById("tab:r0:2");
-      if (tab && tab.classList) {
-        tab.classList.add("project-tabs-hover-class");
-      }
-    }
+    selectedTab[0].classList.add("project-tabs-hover-class");
   }, [tabIndex]);
 
   return (
