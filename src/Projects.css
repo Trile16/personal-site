@@ -147,6 +147,12 @@ hr {
     min-width: 0;
   }
 
+  .project-header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
   .project-links {
     padding: 0.25rem;
   }
