@@ -112,7 +112,7 @@
 @media (max-width: 550px) {
   #nav-bar {
     display: none;
-    height: 40rem;
+    height: 32rem;
     width: 7rem;
     position: fixed;
     top: 6rem;
