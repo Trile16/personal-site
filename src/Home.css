@@ -16,10 +16,16 @@
   position: relative;
   right: 15vw;
   font-size: 12vw;
+  z-index: 3;
 }
 
-span {
-  width: 100%;
+#name > span {
+  transition: color 0.5s;
+}
+
+span:hover {
+  color: black;
+  cursor: default;
 }
 
 #title {

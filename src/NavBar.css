@@ -109,7 +109,7 @@
   z-index: 3;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 675px) {
   #nav-bar {
     display: none;
     height: 32rem;
