@@ -122,7 +122,7 @@ const NavBar = ({ color, setColor, navColor, setNavColor }) => {
           <div id="links">
             <a
               className="link"
-              href="#home"
+              href="#"
               onClick={() => {
                 const navBar = document.getElementById("nav-bar");
                 navBar.style.display = "";
