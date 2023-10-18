@@ -13,6 +13,8 @@ import nodejs from "./assets/nodejs.svg";
 import vitejs from "./assets/vitejs.svg";
 import redux from "./assets/redux.svg";
 import tailwindcss from "./assets/tailwindcss.svg";
+import python from "./assets/python.svg";
+import docker from "./assets/docker-icon.svg";
 
 const About = ({ navColor }) => {
   useEffect(() => {
@@ -45,6 +47,7 @@ const About = ({ navColor }) => {
           <TechCard imgSrc={css} name="CSS" />
           <TechCard imgSrc={javascript} name="JavaScript" />
           <TechCard imgSrc={typescript} name="TypeScript" />
+          <TechCard imgSrc={python} name="Python" />
           <TechCard imgSrc={react} name="React" />
           <TechCard imgSrc={nextjs} name="Next.js" />
           <TechCard imgSrc={postgresql} name="PostgreSQL" />
@@ -53,6 +56,7 @@ const About = ({ navColor }) => {
           <TechCard imgSrc={vitejs} name="Vite" />
           <TechCard imgSrc={redux} name="Redux" />
           <TechCard imgSrc={tailwindcss} name="Tailwind CSS" />
+          <TechCard imgSrc={docker} name="Docker" />
         </div>
         <hr />
       </div>
