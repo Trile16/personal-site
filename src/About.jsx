@@ -15,6 +15,8 @@ import redux from "./assets/redux.svg";
 import tailwindcss from "./assets/tailwindcss.svg";
 import python from "./assets/python.svg";
 import docker from "./assets/docker-icon.svg";
+import mongo from "./assets/mongodb.svg";
+import webpack from "./assets/webpack.svg";
 
 const About = ({ navColor }) => {
   useEffect(() => {
@@ -50,13 +52,15 @@ const About = ({ navColor }) => {
           <TechCard imgSrc={python} name="Python" />
           <TechCard imgSrc={react} name="React" />
           <TechCard imgSrc={nextjs} name="Next.js" />
+          <TechCard imgSrc={mongo} name="MongoDB" />
           <TechCard imgSrc={postgresql} name="PostgreSQL" />
           <TechCard imgSrc={express} name="Express" />
           <TechCard imgSrc={nodejs} name="Node.js" />
-          <TechCard imgSrc={vitejs} name="Vite" />
           <TechCard imgSrc={redux} name="Redux" />
           <TechCard imgSrc={tailwindcss} name="Tailwind CSS" />
           <TechCard imgSrc={docker} name="Docker" />
+          <TechCard imgSrc={vitejs} name="Vite" />
+          <TechCard imgSrc={webpack} name="Webpack" />
         </div>
         <hr />
       </div>
